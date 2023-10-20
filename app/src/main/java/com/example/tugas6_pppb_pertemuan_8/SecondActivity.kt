@@ -16,19 +16,11 @@ class SecondActivity : AppCompatActivity() {
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val username = intent.getStringExtra("username")
-//        val actionBar = supportActionBar
         with(binding){
             usernameTextView.text = username
-//            actionBar!!.setDisplayHomeAsUpEnabled(true)
-//            actionBar!!.setDisplayHomeAsUpEnabled(true)
-
         }
     }
 
-//    override fun onSupportNavigateUp(): Boolean {
-//        onBackPressed()
-//        return true
-//    }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
     menuInflater.inflate(R.menu.keluar, menu)
     return true
@@ -37,7 +29,6 @@ class SecondActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_out -> {
-                // Handle the click event for the "Back to Main" item
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 return true
