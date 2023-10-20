@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Tugas6_PPPB_Pertemuan_8" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#525BFF</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+    <style name="Theme.Tugas6_PPPB_Pertemuan_8_ActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#525BFF</item>
+        <item name="colorPrimaryVariant">#525BFF</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#525BFF</item>
+        <item name="colorSecondaryVariant">#525BFF</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

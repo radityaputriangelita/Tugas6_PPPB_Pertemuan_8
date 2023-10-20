@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/regis_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Login"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="60px"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_input_login"
+            android:layout_marginTop="50dp"
+            android:layout_width="900px"
+            android:height="48dp"
+            android:hint="Username"
+            android:padding="10dp"
+            android:paddingLeft="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round"
+            android:drawableStart="@drawable/baseline_person_2_24"
+            android:drawablePadding="10dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_input_layout"
+            android:layout_width="900px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            android:hint="Password"
+            android:textColorHint="#a7a7a9"
+            app:boxStrokeWidth="0dp"
+            app:hintTextColor="@color/white"
+            android:layout_marginTop="20dp"
+            app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_input_edittext_login"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:backgroundTint="#ededed"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="#D1D1D1"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remember me"
+                    android:textSize="10sp"
+                    />
+                <TextView
+                    android:id="@+id/text_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forget Password?"
+                    android:textColor="#525BFF"
+                    android:textSize="10sp"
+                    android:layout_marginStart="140dp"
+                    android:layout_toRightOf="@id/text_checkbox"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginTop="170dp"
+            android:layout_width="900px"
+            android:text="L O G I N"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#525BFF"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New member?"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/text_Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Register."
+                android:textColor="#525BFF"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
